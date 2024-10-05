@@ -1,7 +1,7 @@
 ARG version
-FROM almalinux:${version}
+FROM almalinux:${version:-8}
 #RUN cat /etc/*release
-ARG COURDE
-ARG TRAINER
+ARG ${COURSE:-Docker}
+ARG ${TRAINER:-siva}
 RUN echo "Course is: ${COURSE},Trainer is: ${TRAINER}"
 CMD [ "sleep","100" ]
