@@ -1,3 +1,3 @@
-ARG version=8
+ARG version
 FROM almlinux:${version}
  
